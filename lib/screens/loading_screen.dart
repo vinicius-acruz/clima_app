@@ -1,7 +1,7 @@
 import 'package:clima/screens/location_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:clima/services/weather.dart';
+import 'package:lottie/lottie.dart';
 
 class LoadingScreen extends StatefulWidget {
   @override
@@ -12,7 +12,6 @@ class _LoadingScreenState extends State<LoadingScreen> {
   @override
   void initState() {
     super.initState();
-
     getLocationData(context);
   }
 
@@ -20,6 +19,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     try {
       WeatherModel weatherModel = WeatherModel();
       dynamic weatherData = await weatherModel.getLocationWeather();
+      print(weatherData);
 
       Navigator.push(context, MaterialPageRoute(builder: (context) {
         return LocationScreen(locationWeather: weatherData);
@@ -32,11 +32,16 @@ class _LoadingScreenState extends State<LoadingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-          child: SpinKitDoubleBounce(
-        color: Colors.white,
-        size: 100.0,
-      )),
-    );
+        body: Center(
+      child: Container(
+          // set container to take all screen space
+          constraints: const BoxConstraints.expand(),
+          decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Colors.white, Colors.blue])),
+          child: Lottie.asset('images/loading_animation.json')),
+    ));
   }
 }

@@ -6,6 +6,7 @@ class WeatherModel {
   static String apiKey = Env.openWeatherkey1;
   static const openWeatherMapURL =
       'https://api.openweathermap.org/data/2.5/weather';
+  // 'https://api.openweathermap.org/data/2.5/weather';
 
   Future<dynamic> getLocationWeather() async {
     Location location = Location();
