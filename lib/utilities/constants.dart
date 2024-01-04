@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
 const kTempTextStyle = TextStyle(
-  fontFamily: 'Spartan MB',
+  fontFamily: 'roboto',
   fontSize: 100.0,
+  fontWeight: FontWeight.w400,
+  color: Colors.white,
 );
 
 const kMessageTextStyle = TextStyle(
-  fontFamily: 'Spartan MB',
-  fontSize: 60.0,
+  fontFamily: 'roboto',
+  fontSize: 30.0,
+  color: Colors.white,
 );
 
 const kButtonTextStyle = TextStyle(
