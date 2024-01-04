@@ -28,20 +28,23 @@ class SunriseSunsetWidget extends StatelessWidget {
         children: [
           Column(
             children: [
-              const Icon(Icons.wb_sunny, color: Colors.yellow),
+              SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.1,
+                  child: Lottie.asset('images/sunrise.json')),
               Text(
                 'Sunrise: ${DateFormat('h:mm a').format(sunrise)}', // Use DateFormat from intl package
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
               ),
             ],
           ),
           Column(
             children: [
-              Lottie.asset('images/sunset.json'),
-              Icon(Icons.nights_stay, color: Colors.blue),
+              SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.1,
+                  child: Lottie.asset('images/sunset.json')),
               Text(
                 'Sunset: ${DateFormat('h:mm a').format(sunset)}', // Use DateFormat from intl package
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
               ),
             ],
           ),

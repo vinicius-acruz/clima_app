@@ -17,35 +17,57 @@ class WeatherInfoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 120,
-      width: MediaQuery.of(context).size.width / 2 - 40,
-      padding: const EdgeInsets.all(10),
-      decoration: BoxDecoration(
-        color: const Color.fromARGB(255, 255, 255, 255).withOpacity(0.1),
-        borderRadius: BorderRadius.circular(15),
-        boxShadow: [
-          BoxShadow(
-            color: BackgroundColor.getBackgroundColor(temperature)
-                .withOpacity(0.3),
-            spreadRadius: 1,
-            blurRadius: 2,
-            offset: const Offset(0, 2), // changes position of shadow
-          ),
-        ],
-      ),
+    return SizedBox(
+      height: 90,
+      width: MediaQuery.of(context).size.width / 2 - 20,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Icon(icon, color: Colors.white, size: 30),
-          const SizedBox(height: 10),
-          Text(title,
-              style: const TextStyle(color: Colors.white, fontSize: 16)),
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(0),
+            decoration: BoxDecoration(
+              color: Colors.transparent,
+              borderRadius: BorderRadius.circular(15),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.transparent,
+                  spreadRadius: 1,
+                  blurRadius: 2,
+                  offset: const Offset(0, 2), // changes position of shadow
+                ),
+              ],
+            ),
+            child: Container(
+              padding: EdgeInsets.symmetric(vertical: 5),
+              decoration: BoxDecoration(
+                color: Colors.white24,
+                borderRadius: BorderRadius.circular(15),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.transparent,
+                    spreadRadius: 1,
+                    blurRadius: 2,
+                    offset: const Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Icon(icon, color: Colors.white, size: 30),
+                  const SizedBox(height: 10),
+                  Text(title,
+                      style:
+                          const TextStyle(color: Colors.white, fontSize: 16)),
+                ],
+              ),
+            ),
+          ),
           Text(value,
               style: const TextStyle(
                   color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold)),
+                  fontSize: 23,
+                  fontWeight: FontWeight.w500)),
         ],
       ),
     );

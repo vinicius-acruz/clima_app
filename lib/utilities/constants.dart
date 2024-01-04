@@ -9,13 +9,13 @@ const kTempTextStyle = TextStyle(
 
 const kMessageTextStyle = TextStyle(
   fontFamily: 'roboto',
-  fontSize: 30.0,
+  fontSize: 28.0,
   color: Colors.white,
 );
 
 const kButtonTextStyle = TextStyle(
   fontSize: 30.0,
-  fontFamily: 'Spartan MB',
+  fontFamily: 'roboto',
   color: Colors.white,
 );
 
@@ -37,4 +37,14 @@ const kTextFieldInputDecoration = InputDecoration(
         Radius.circular(10.00),
       ),
       borderSide: BorderSide.none),
+);
+
+final ButtonStyle buttonStyle = OutlinedButton.styleFrom(
+  foregroundColor: Colors.white,
+  backgroundColor: Colors.transparent, // Transparent background
+  side: BorderSide(color: Colors.white, width: 2), // White border
+  padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+  shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(30), // Rounded corners
+  ),
 );
