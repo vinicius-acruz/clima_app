@@ -52,9 +52,9 @@ class WeatherModel {
     } else if (temp > 20) {
       return 'Perfect weather for shorts and t-shirts.';
     } else if (temp < 10) {
-      return 'It\'s quite cold, consider wearing a scarf and gloves.';
+      return 'It\'s quite cold, consider wearing a scarf and gloves!';
     } else {
-      return 'A bit chilly, you might want to bring a jacket.';
+      return 'A bit chilly, you might want to bring a jacket!';
     }
   }
 }

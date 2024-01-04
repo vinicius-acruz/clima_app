@@ -142,7 +142,7 @@ class _LocationScreenState extends State<LocationScreen>
                               IntrinsicWidth(
                                 child: Column(
                                   children: <Widget>[
-                                    Container(
+                                    SizedBox(
                                       width: MediaQuery.of(context).size.width /
                                           1.8,
                                       child: FittedBox(
@@ -191,7 +191,7 @@ class _LocationScreenState extends State<LocationScreen>
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10.0,
                           ),
                           Column(
@@ -239,7 +239,7 @@ class _LocationScreenState extends State<LocationScreen>
                                         barrierColor: Colors.black.withOpacity(
                                             0.5), // Dim the background, you can adjust the opacity
                                         builder: (BuildContext context) {
-                                          return CityScreen();
+                                          return const CityScreen();
                                         },
                                       );
                                       if (typedName != null) {
@@ -273,30 +273,45 @@ class _LocationScreenState extends State<LocationScreen>
                           ),
                         ],
                       ),
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.15,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Icon(weatherIcon,
-                                    size: 80, color: Colors.white),
-                                const SizedBox(
-                                  height: 20,
+                      FittedBox(
+                        child: SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.15,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(weatherIcon,
+                                      size: 80, color: Colors.white),
+                                  const SizedBox(
+                                    height: 20,
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(
+                                width: 30,
+                              ),
+                              Text(
+                                '$temperature°',
+                                style: kTempTextStyle,
+                              ),
+                              Align(
+                                alignment: Alignment.bottomCenter,
+                                child: Text(
+                                  weatherDescription,
+                                  style: kMessageTextStyle.copyWith(
+                                      fontWeight: FontWeight.w300,
+                                      fontSize: 25,
+                                      fontStyle: FontStyle.italic),
                                 ),
-                              ],
-                            ),
-                            const SizedBox(
-                              width: 30,
-                            ),
-                            Text(
-                              '$temperature°',
-                              style: kTempTextStyle,
-                            ),
-                          ],
+                              ),
+                            ],
+                          ),
                         ),
+                      ),
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * 0.03,
                       ),
                       Padding(
                         padding: EdgeInsets.only(
@@ -319,7 +334,7 @@ class _LocationScreenState extends State<LocationScreen>
                         sunset: sunset,
                       ),
                       Container(
-                        margin: EdgeInsets.only(top: 20),
+                        margin: const EdgeInsets.only(top: 20),
                         width: double.infinity,
 
                         // add rounded boarders to the container

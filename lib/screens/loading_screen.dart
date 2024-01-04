@@ -36,11 +36,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
       child: Container(
           // set container to take all screen space
           constraints: const BoxConstraints.expand(),
-          decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [Colors.white, Colors.blue])),
+          decoration: const BoxDecoration(color: Colors.white),
           child: Lottie.asset('images/loading_animation.json')),
     ));
   }

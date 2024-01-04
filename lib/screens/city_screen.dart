@@ -15,9 +15,9 @@ class _CityScreenState extends State<CityScreen> {
   Widget build(BuildContext context) {
     return Container(
       height: MediaQuery.of(context).size.height * 0.4,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Colors.white30, // Set the color for the bottom sheet's container
-        borderRadius: const BorderRadius.only(
+        borderRadius: BorderRadius.only(
           topLeft: Radius.circular(20.0),
           topRight: Radius.circular(20.0),
         ),
@@ -29,21 +29,21 @@ class _CityScreenState extends State<CityScreen> {
             Container(
               padding: const EdgeInsets.all(20.0),
               child: TextField(
-                style: TextStyle(color: Colors.black),
+                style: const TextStyle(color: Colors.black),
                 decoration: kTextFieldInputDecoration,
                 onChanged: (value) {
                   cityName = value;
                 },
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             SizedBox(
               height: 70,
               width: MediaQuery.of(context).size.width * 0.7,
               child: OutlinedButton.icon(
-                icon: Column(
+                icon: const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(
