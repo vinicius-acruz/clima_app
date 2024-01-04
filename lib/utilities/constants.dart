@@ -1,27 +1,37 @@
 import 'package:flutter/material.dart';
 
+// Typography
+const String kFontFamilyRoboto = 'roboto';
+
+const double kFontSizeLarge = 100.0;
+const double kFontSizeMedium = 30.0;
+const double kFontSizeSmall = 25.0;
+
 const kTempTextStyle = TextStyle(
-  fontFamily: 'roboto',
-  fontSize: 100.0,
+  fontFamily: kFontFamilyRoboto,
+  fontSize: kFontSizeLarge,
   fontWeight: FontWeight.w400,
   color: Colors.white,
 );
 
 const kMessageTextStyle = TextStyle(
-  fontFamily: 'roboto',
-  fontSize: 28.0,
+  fontFamily: kFontFamilyRoboto,
+  fontSize: kFontSizeMedium,
   color: Colors.white,
 );
 
 const kButtonTextStyle = TextStyle(
-  fontSize: 30.0,
-  fontFamily: 'roboto',
+  fontSize: kFontSizeSmall,
+  fontFamily: kFontFamilyRoboto,
   color: Colors.white,
 );
 
 const kConditionTextStyle = TextStyle(
-  fontSize: 100.0,
+  fontSize: kFontSizeLarge,
 );
+
+// Input Decoration
+const double kBorderRadiusValue = 10.0;
 
 const kTextFieldInputDecoration = InputDecoration(
   filled: true,
@@ -34,17 +44,24 @@ const kTextFieldInputDecoration = InputDecoration(
   hintStyle: TextStyle(color: Colors.grey),
   border: OutlineInputBorder(
       borderRadius: BorderRadius.all(
-        Radius.circular(10.00),
+        Radius.circular(kBorderRadiusValue),
       ),
       borderSide: BorderSide.none),
 );
 
+// Button Styles
+const double kButtonBorderWidth = 2.0;
+const double kButtonPaddingHorizontal = 30.0;
+const double kButtonPaddingVertical = 10.0;
+const double kButtonBorderRadius = 30.0;
+
 final ButtonStyle buttonStyle = OutlinedButton.styleFrom(
   foregroundColor: Colors.white,
-  backgroundColor: Colors.transparent, // Transparent background
-  side: BorderSide(color: Colors.white, width: 2), // White border
-  padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+  backgroundColor: Colors.transparent,
+  side: BorderSide(color: Colors.white, width: kButtonBorderWidth),
+  padding: EdgeInsets.symmetric(
+      horizontal: kButtonPaddingHorizontal, vertical: kButtonPaddingVertical),
   shape: RoundedRectangleBorder(
-    borderRadius: BorderRadius.circular(30), // Rounded corners
+    borderRadius: BorderRadius.circular(kButtonBorderRadius),
   ),
 );
