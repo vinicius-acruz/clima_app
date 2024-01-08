@@ -3,7 +3,7 @@ import 'package:clima/utilities/constants.dart';
 import 'package:weather_icons/weather_icons.dart';
 
 class CityScreen extends StatefulWidget {
-  const CityScreen({Key? key}) : super(key: key);
+  const CityScreen({super.key});
   @override
   State<CityScreen> createState() => _CityScreenState();
 }

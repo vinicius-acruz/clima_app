@@ -4,6 +4,8 @@ import 'package:clima/services/weather.dart';
 import 'package:lottie/lottie.dart';
 
 class LoadingScreen extends StatefulWidget {
+  const LoadingScreen({super.key});
+
   @override
   State<LoadingScreen> createState() => _LoadingScreenState();
 }
@@ -19,7 +21,6 @@ class _LoadingScreenState extends State<LoadingScreen> {
     try {
       WeatherModel weatherModel = WeatherModel();
       dynamic weatherData = await weatherModel.getLocationWeather();
-      print(weatherData);
 
       Navigator.push(context, MaterialPageRoute(builder: (context) {
         return LocationScreen(locationWeather: weatherData);

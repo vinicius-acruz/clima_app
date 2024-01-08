@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart'; // Import the intl package
@@ -9,10 +7,10 @@ class SunriseSunsetWidget extends StatelessWidget {
   final DateTime sunset;
 
   const SunriseSunsetWidget({
-    Key? key,
+    super.key,
     required this.sunrise,
     required this.sunset,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

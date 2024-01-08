@@ -223,7 +223,7 @@ class _LocationScreenState extends State<LocationScreen>
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   RichText(

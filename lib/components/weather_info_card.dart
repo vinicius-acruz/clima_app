@@ -1,4 +1,3 @@
-import 'package:clima/components/background_color.dart';
 import 'package:flutter/material.dart';
 
 class WeatherInfoCard extends StatelessWidget {
@@ -8,12 +7,12 @@ class WeatherInfoCard extends StatelessWidget {
   final int temperature;
 
   const WeatherInfoCard({
-    Key? key,
+    super.key,
     required this.title,
     required this.value,
     required this.icon,
     required this.temperature,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -28,26 +27,26 @@ class WeatherInfoCard extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.transparent,
               borderRadius: BorderRadius.circular(15),
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   color: Colors.transparent,
                   spreadRadius: 1,
                   blurRadius: 2,
-                  offset: const Offset(0, 2), // changes position of shadow
+                  offset: Offset(0, 2), // changes position of shadow
                 ),
               ],
             ),
             child: Container(
-              padding: EdgeInsets.symmetric(vertical: 5),
+              padding: const EdgeInsets.symmetric(vertical: 5),
               decoration: BoxDecoration(
                 color: Colors.white24,
                 borderRadius: BorderRadius.circular(15),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     color: Colors.transparent,
                     spreadRadius: 1,
                     blurRadius: 2,
-                    offset: const Offset(0, 2), // changes position of shadow
+                    offset: Offset(0, 2), // changes position of shadow
                   ),
                 ],
               ),

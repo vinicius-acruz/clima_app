@@ -58,8 +58,8 @@ const double kButtonBorderRadius = 30.0;
 final ButtonStyle buttonStyle = OutlinedButton.styleFrom(
   foregroundColor: Colors.white,
   backgroundColor: Colors.transparent,
-  side: BorderSide(color: Colors.white, width: kButtonBorderWidth),
-  padding: EdgeInsets.symmetric(
+  side: const BorderSide(color: Colors.white, width: kButtonBorderWidth),
+  padding: const EdgeInsets.symmetric(
       horizontal: kButtonPaddingHorizontal, vertical: kButtonPaddingVertical),
   shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(kButtonBorderRadius),
