@@ -98,27 +98,43 @@ class _LocationScreenState extends State<LocationScreen>
   }
 
   Widget _buildWeatherInfoRow() {
-    return FittedBox(
-      child: SizedBox(
-        height: MediaQuery.of(context).size.height * 0.15,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Icon(weatherIcon, size: 80, color: Colors.white),
-            const SizedBox(width: 30),
-            Text('$temperature°', style: kTempTextStyle),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: Text(
-                weatherDescription,
-                style: kMessageTextStyle.copyWith(
-                    fontWeight: FontWeight.w300,
-                    fontSize: 25,
-                    fontStyle: FontStyle.italic),
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.15,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 0.15,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(weatherIcon, size: 75, color: Colors.white),
+                const SizedBox(
+                  height: 30,
+                )
+              ],
+            ),
+          ),
+          const SizedBox(width: 30),
+          SizedBox(
+              width: MediaQuery.of(context).size.width * 0.35,
+              child: Text('$temperature°', style: kTempTextStyle)),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: SizedBox(
+              width: MediaQuery.of(context).size.width * 0.36,
+              child: FittedBox(
+                child: Text(
+                  weatherDescription,
+                  style: kMessageTextStyle.copyWith(
+                      fontWeight: FontWeight.w300,
+                      fontSize: 25,
+                      fontStyle: FontStyle.italic),
+                ),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
@@ -192,18 +208,23 @@ class _LocationScreenState extends State<LocationScreen>
                       children: <Widget>[
                         SizedBox(
                           width: MediaQuery.of(context).size.width / 1.8,
+                          height: MediaQuery.of(context).size.height * 0.06,
                           child: FittedBox(
                             child: Text(
                               '$cityName, $countryName',
+                              textAlign: TextAlign.left,
                               style: kMessageTextStyle.copyWith(
                                   fontWeight: FontWeight.w300),
                             ),
                           ),
                         ),
                         const Divider(
-                            height: 10, thickness: 2, color: Colors.white),
+                            height: 00, thickness: 2, color: Colors.white),
                       ],
                     ),
+                  ),
+                  SizedBox(
+                    height: 5,
                   ),
                   RichText(
                     textAlign: TextAlign.left,

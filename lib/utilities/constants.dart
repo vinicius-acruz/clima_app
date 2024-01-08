@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // Typography
 const String kFontFamilyRoboto = 'roboto';
 
-const double kFontSizeLarge = 100.0;
+const double kFontSizeLarge = 80.0;
 const double kFontSizeMedium = 30.0;
 const double kFontSizeSmall = 25.0;
 

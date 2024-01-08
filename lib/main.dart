@@ -8,6 +8,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // Remove the debug banner
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
       home: LoadingScreen(),
     );
