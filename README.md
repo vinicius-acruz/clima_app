@@ -1,8 +1,8 @@
-![Weather App Banner](images/weather_app_banner.png)
+![Clima App Banner](images/clima_banner.png)
 
-# Weather App
+# Clima App
 
-The Weather App is a sophisticated weather forecasting application developed using Flutter. This app provides real-time weather information, including temperature, humidity, wind speed, and more, for any city around the globe. It's an excellent example of a modern, mobile weather application with a sleek and user-friendly interface.
+The Clima App is a sophisticated Clima forecasting application developed using Flutter. This app provides real-time Clima information, including temperature, humidity, wind speed, and more, for any city around the globe. It's an excellent example of a modern, mobile Clima application with a sleek and user-friendly interface.
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ The Weather App is a sophisticated weather forecasting application developed usi
 
 ## Installation
 
-To install the Weather App, follow these steps:
+To install the Clima App, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Ensure you have Flutter installed on your system.
@@ -33,13 +33,13 @@ To use the app:
 
 ## Features
 
-![Weather App Gif](images/clima_frame.gif)
+![Clima App Gif](images/clima_frame.gif)
 
-Weather App includes several features such as:
+Clima App includes several features such as:
 
-- **Real-time Weather Data**: Get up-to-date weather information for any location.
-- **City Search**: Search and view weather details for different cities.
-- **Weather Conditions Display**: Shows temperature, humidity, wind speed, visibility, and more.
+- **Real-time Clima Data**: Get up-to-date Clima information for any location.
+- **City Search**: Search and view Clima details for different cities.
+- **Clima Conditions Display**: Shows temperature, humidity, wind speed, visibility, and more.
 - **Animated Transitions**: Smooth and visually appealing transitions.
 - **Interactive UI**: User-friendly interface with intuitive navigation and controls.
 
@@ -50,7 +50,7 @@ The app relies on the following Flutter dependencies:
 - `flutter` (Flutter SDK)
 - `material` (Flutter Material Components)
 - `lottie` (For animations)
-- `weather_icons` (To display weather-related icons)
+- `Clima_icons` (To display Clima-related icons)
 
 ## Configuration
 
@@ -70,4 +70,4 @@ This project is developed by [Your Name]. Feel free to contribute, suggest impro
 
 ## License
 
-This Weather App is open-sourced software licensed under the [MIT License](https://opensource.org/licenses/MIT).
+This Clima App is open-sourced software licensed under the [MIT License](https://opensource.org/licenses/MIT).
