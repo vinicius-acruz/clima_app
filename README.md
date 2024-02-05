@@ -2,7 +2,7 @@
 
 # Clima App
 
-The Clima App is a real-time weather forecasting application developed using Flutter. It utilizes the openweather API to fetch current weather data, offering features like location-based weather, city search and detailed weather forecasts, including temperature, humidity, wind speed, and more. his app combines a sleek design with functionality, making it easy to get accurate weather updates.
+The Clima App is a real-time weather forecasting application developed using Flutter. It utilizes the openweather API to fetch current weather data, offering features like location-based weather, city search and detailed weather forecasts, including temperature, humidity, wind speed, and more. This app combines a sleek design with functionality, making it easy to get accurate weather updates.
 
 ## Table of Contents
 
