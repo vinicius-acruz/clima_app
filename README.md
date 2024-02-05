@@ -33,7 +33,9 @@ To use the app:
 
 ## Features
 
-![Clima App Gif](images/clima_frame.gif)
+<p align="center">
+  <img src="images/clima_frame.gif" alt="Clima App Gif">
+</p>
 
 Clima App includes several features such as:
 
@@ -70,7 +72,7 @@ For issues related to Flutter setup or dependency problems, consult the official
 
 ## Contributors
 
-This project is developed by [Your Name]. Feel free to contribute, suggest improvements, or report issues.
+Clima App was Originally created as part of The Complete Flutter Development Bootcamp, by Dr. Angela Yu and App Brewery, updated by NonymousMorlock and was customized by me. Contributions, suggestions, and feedback are welcome.
 
 ## License
 
