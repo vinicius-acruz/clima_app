@@ -2,7 +2,7 @@
 
 # Clima App
 
-The Clima App is a sophisticated Clima forecasting application developed using Flutter. This app provides real-time Clima information, including temperature, humidity, wind speed, and more, for any city around the globe. It's an excellent example of a modern, mobile Clima application with a sleek and user-friendly interface.
+The Clima App is a real-time weather forecasting application developed using Flutter. It utilizes the openweather API to fetch current weather data, offering features like location-based weather, city search and detailed weather forecasts, including temperature, humidity, wind speed, and more. his app combines a sleek design with functionality, making it easy to get accurate weather updates.
 
 ## Table of Contents
 
@@ -45,16 +45,20 @@ Clima App includes several features such as:
 
 ## Dependencies
 
-The app relies on the following Flutter dependencies:
+Clima uses the following dependencies:
 
-- `flutter` (Flutter SDK)
-- `material` (Flutter Material Components)
-- `lottie` (For animations)
-- `Clima_icons` (To display Clima-related icons)
+- `http`: For network calls.
+- `flutter_spinkit`: For loading indicators.
+- `cupertino_icons`: For iOS style icons.
+- `geolocator`: To get the current location of the device.
+- `envied`: For environment variable management.
+- `lottie`: For animations.
+- `weather_icons`: To display weather-related icons.
+- `intl`: For internationalization support.
 
 ## Configuration
 
-No additional configuration is required to run the app in its current state.
+Make sure to set up your environment variables for API keys using `envied` package.
 
 ## Documentation
 
